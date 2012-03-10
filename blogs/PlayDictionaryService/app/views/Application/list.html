@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'List' /}
+
+<table>
+	<thead>
+		<tr>
+			<th class="name">Name</th>
+			<th class="definition">Definition</th>
+			<th class="edit"></th>
+		</tr>
+	</thead>
+	<tbody>
+	    #{list words, as:'word'}
+	    <tr class="word" wordId="${word.id}" draggable="true">
+   			<td id="name-${word.id}">${word.name}</td>
+   			<td id="definition-${word.id}">${word.definition}</td>
+   			<td><a href="@{form(word.id)}">&gt;</a></td>
+   		</tr>
+	    #{/list}
+	    <tr>
+	        #{form @save()}
+	        <td><input type="text" name="word.name"></td>
+	        <td><input type="text" name="word.definition"></td>
+	        <td><input type="submit" value="+"></td>
+	        #{/form}
+	    </tr>
+	</tbody>
+</table>

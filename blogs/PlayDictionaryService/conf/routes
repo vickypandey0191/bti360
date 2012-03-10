@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /dictionary                                Dictionary.all
+POST    /dictionary                                Dictionary.create
+GET     /dictionary/{id}                           Dictionary.read
+PUT     /dictionary/{id}                           Dictionary.update
+DELETE  /dictionary/{id}                           Dictionary.delete
+
+# Map static resources from the /app/public folder to the /public path
+GET     /                                       staticDir:public

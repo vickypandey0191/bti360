@@ -1,0 +1,5 @@
+15 Nov 2010 19:11:07,661 INFO  ~ Starting c:\dev\PlayDictionaryService
+15 Nov 2010 19:11:08,445 WARN  ~ You're running Play! in DEV mode
+15 Nov 2010 19:11:08,574 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+15 Nov 2010 19:11:25,288 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
+15 Nov 2010 19:11:26,114 INFO  ~ Application 'PlayDictionaryService' is now started !
